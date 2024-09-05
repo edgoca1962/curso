@@ -1,0 +1,68 @@
+/*****************************************
+*
+* Rotate menu pseudo class
+*
+*****************************************/
+.active {
+   border-radius: 5%;
+   background-color: rgba(40, 48, 61, 0.8);
+}
+
+@media(max-width:576px) {
+   .dropdown-item::before {
+      transform: rotate(-90deg)
+   }
+
+   #main_navbar {
+      background-color: rgba(40, 48, 61, 0.8);
+   }
+}
+/*****************************************
+*
+* Eliminar background autorelleno de Chrome
+*
+*****************************************/
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+   border: 1px solid green;
+   -webkit-text-fill-color: white;
+   --box-shadow: 0 0 0px 1000px #000 inset;
+   transition: background-color 5000s ease-in-out 0s;
+}
+/*****************************************
+*
+* Efecto Glass para formulario Login.
+*
+*****************************************/
+.ingreso-bg {
+   /* From https://css.glass */
+   background: rgba(249, 249, 249, 0.08);
+   border-radius: 16px;
+   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+   backdrop-filter: blur(9.4px);
+   -webkit-backdrop-filter: blur(9.4px);
+   border: 1px solid rgba(249, 249, 249, 0.3);
+}
+/*****************************************
+*
+* Formato para input floating
+*
+*****************************************/
+.form-floating>label::after {
+   background: none !important;
+}
+
+.float>.form-floating>.form-control:focus~label,
+.float>.form-floating>.form-control:not(:placeholder-shown)~label,
+.float>.form-floating>.form-control-plaintext~label,
+.float>.form-floating>.form-select~label {
+      color: rgba(var(--bs-warning-rgb), 0.65);
+         transform: scale(0.85) translateY(-0.5rem) translateX(0.15rem);
+}

@@ -1,0 +1,16 @@
+/*
+!.DS_Store
+!.gitignore
+
+!wp-content
+wp-content/*
+
+!wp-content/themes
+wp-content/themes/*
+!wp-content/themes/leccion*
+
+!wp-content/webpack
+wp-content/webpack/*
+!wp-content/webpack/src
+!wp-content/webpack/package*
+!wp-content/webpack/webpack*
