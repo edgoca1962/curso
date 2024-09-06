@@ -7,6 +7,13 @@ document.addEventListener('submit', (event) => {
       dataform.append('action', event.submitter.name)
       procesar_formularios_post(dataform, event)
    }
+   if (event.submitter.name === 'post_compartir') {
+      const element_id = 'post_compartir_' + form.getAttribute('id').substr(13)
+      const element = document.getElementById(element_id)
+      const postUrl = encodeURIComponent(element.dataset.enlace)
+      const shareUrl = 'https://api.whatsapp.com/send?text=' + postUrl
+      window.open(shareUrl, '_blank')
+   }
 })
 
 async function procesar_formularios_post(dataform, event) {

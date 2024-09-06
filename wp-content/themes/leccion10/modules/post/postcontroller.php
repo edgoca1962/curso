@@ -155,6 +155,38 @@ class PostController
       if (!wp_verify_nonce($_POST['nonce'], 'post_mantenimiento')) {
          wp_send_json_error('Error de seguridad', 401);
       } else {
+         if (!isset($_POST['post_id'])) {
+            return;
+         }
+         $post_id = sanitize_text_field($_POST['post_id']);
+         $post = get_post($post_id);
+         if (!$post) {
+            return;
+         }
+         $comments = get_comments(array('post_id' => $post_id));
+         foreach ($comments as $comment) {
+            wp_delete_comment($comment->comment_ID, true);
+         }
+         $attachments = get_attached_media('', $post_id);
+         foreach ($attachments as $attachment) {
+            $file_path = get_attached_file($attachment->ID);
+            if (file_exists($file_path)) {
+               unlink($file_path);
+            }
+            $meta = wp_get_attachment_metadata($attachment->ID);
+            $upload_dir = wp_upload_dir();
+            if (isset($meta['sizes'])) {
+               foreach ($meta['sizes'] as $size) {
+                  $size_path = pathinfo($file_path);
+                  $size_file = $upload_dir['basedir'] . '/' . $size_path['dirname'] . '/' . $size['file'];
+                  if (file_exists($size_file)) {
+                     unlink($size_file);
+                  }
+               }
+            }
+            wp_delete_attachment($attachment->ID, true);
+         }
+         wp_delete_post($post_id, true);
          wp_send_json_success(['titulo' => 'Artículo Borrado', 'msg' => 'El artículo ha sido borrado correctamente.']);
       }
    }

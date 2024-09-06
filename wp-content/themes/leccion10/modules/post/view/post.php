@@ -32,7 +32,7 @@ $atributos = CoreController::get_instance()->get_datos();
                <button name="post_editar" class="btn btn-primary"><i class="fa-solid fa-pen-to-square"></i></button>
                <button name="post_borrar" class="btn btn-danger"><i class="fa-solid fa-trash-can"></i></button>
             <?php endif; ?>
-            <button name="post_compartir" class="btn btn-outline-success"><i class="fa-brands fa-whatsapp"></i></button>
+            <button id="post_compartir_<?php the_ID() ?>" name="post_compartir" class="btn btn-outline-success" data-enlace="<?php echo get_the_permalink() ?>"><i class="fa-brands fa-whatsapp"></i></button>
             <input name="nonce" type="hidden" value="<?php echo wp_create_nonce('post_mantenimiento') ?>">
             <input name="endpoint" type="hidden" value="<?php echo admin_url('admin-ajax.php') ?>">
             <input name="post_id" type="hidden" value="<?php the_ID() ?>">
