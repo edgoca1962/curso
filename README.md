@@ -30,7 +30,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/edgoca1962/curso">
-    <img src="themes/leccion08/assets/img/fghnegrofblanco.png" alt="Logo" width="80" height="80">
+    <img src="wp-content/themes/leccion08/assets/img/fghnegrofblanco.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">Tema dinámico para Wordpress (Framework)</h3>
