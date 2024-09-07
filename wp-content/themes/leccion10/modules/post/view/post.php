@@ -29,7 +29,7 @@ $atributos = CoreController::get_instance()->get_datos();
       <div class="card-footer text-body-secondary d-flex justify-content-center">
          <form id="articulo_btn_<?php the_ID() ?>">
             <?php if ($core->get_atributo('nivel_acceso') >= 20) : ?>
-               <button name="post_editar" class="btn btn-primary"><i class="fa-solid fa-pen-to-square"></i></button>
+               <!-- <button name="post_editar" class="btn btn-primary"><i class="fa-solid fa-pen-to-square"></i></button> -->
                <button name="post_borrar" class="btn btn-danger"><i class="fa-solid fa-trash-can"></i></button>
             <?php endif; ?>
             <button id="post_compartir_<?php the_ID() ?>" name="post_compartir" class="btn btn-outline-success" data-enlace="<?php echo get_the_permalink() ?>"><i class="fa-brands fa-whatsapp"></i></button>
