@@ -153,11 +153,11 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 
 ## Curso
 
-### Leccion01
+### Leccion 1
 
-### Leccion02
+### Leccion 2
 
-### Leccion03
+### Leccion 3
 
 ### Leccion04
 
