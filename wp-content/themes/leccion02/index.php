@@ -27,7 +27,9 @@ $atributos = CoreController::get_instance()->get_datos();
 </head>
 
 <body <?php body_class($core->get_atributo('body')) ?> style="<?php echo $core->get_atributo('height') ?>">
-   <h3>Página principal</h3>
+   <div class="d-flex justify-content-center align-items-center" style="<?php echo $core->get_atributo('height') ?>">
+      <h3 class="animate__animated animate__bounceInDown">Página principal</h3>
+   </div>
    <?php wp_footer() ?>
 </body>
 
