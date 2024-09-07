@@ -57,16 +57,16 @@
     <li><a href="#usage">Uso</a></li>
     <li><a href="#roadmap">Lecciones del Curso</a></li>
       <ul>
-        <li><a href="#leccion-01">Lección  1</a></li>
-        <li><a href="#leccion-02">Lección  2</a></li>
-        <li><a href="#leccion 3">Lección  3</a></li>
-        <li><a href="#leccion04">Lección  4</a></li>
-        <li><a href="#leccion05">Lección  5</a></li>
-        <li><a href="#leccion06">Lección  6</a></li>
-        <li><a href="#leccion07">Lección  7</a></li>
-        <li><a href="#leccion08">Lección  8</a></li>
-        <li><a href="#leccion09">Lección  9</a></li>
-        <li><a href="#leccion10">Lección 10</a></li>
+        <li><a href="#leccion-01">Lección 01</a></li>
+        <li><a href="#leccion-02">Lección 02</a></li>
+        <li><a href="#leccion-03">Lección 03</a></li>
+        <li><a href="#leccion-04">Lección 04</a></li>
+        <li><a href="#leccion-05">Lección 05</a></li>
+        <li><a href="#leccion-06">Lección 06</a></li>
+        <li><a href="#leccion-07">Lección 07</a></li>
+        <li><a href="#leccion-08">Lección 08</a></li>
+        <li><a href="#leccion-09">Lección 09</a></li>
+        <li><a href="#leccion-10">Lección 10</a></li>
       </ul>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
