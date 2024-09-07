@@ -73,13 +73,12 @@ class CoreController
          */
       }
       $datos['post_type'] = $postType;
+
       $datos['bg-html'] = 'bg-dark';
       $datos['body-style'] = '';
       $datos['body'] = 'bg-dark bg-gradient text-white';
       $datos['banner'] = 'modules/core/view/core-banner';
       $datos['navbar'] = 'modules/core/view/core-navbar';
-      $datos['logoSize'] = '50px';
-      $datos['classLogo'] = 'rounded-circle';
       $datos['section'] = '';
       $datos['section-style'] = '';
       $datos['div1'] = 'container';
@@ -101,9 +100,6 @@ class CoreController
 
       $datos['pag'] = $this->get_pags()['pag'];
       $datos['pag_ant'] = $this->get_pags()['pag_ant'];
-      $datos['regresar'] = $postType;
-      $datos['btn_regresar'] = is_single() ? 'modules/core/view/core-btn-regresar' : '';
-      $datos['commentsTemplate'] = '/modules/core/view/core-comments.php';
       $datos['imagen'] = get_the_post_thumbnail_url() ? get_the_post_thumbnail_url() : MYDOMAIN_DIR_URI . '/assets/img/bg.jpg';
       $datos['height'] = '60dvh';
       $datos['fontweight'] = 'fw-lighter';
@@ -113,8 +109,14 @@ class CoreController
       $datos['subtitulo'] = '';
       $datos['displaysub2'] = 'display-5';
       $datos['subtitulo2'] = '';
+
       $datos['redireccion'] = '/';
+      $datos['logoSize'] = '50px';
+      $datos['classLogo'] = 'rounded-circle';
+      $datos['commentsTemplate'] = '/modules/core/view/core-comments.php';
       $datos['templatepartdenegado'] = 'modules/core/view/core-denegado';
+      $datos['regresar'] = $postType;
+      $datos['btn_regresar'] = is_single() ? 'modules/core/view/core-btn-regresar' : '';
 
       $atributosModulos = $this->get_datos_modulos($postType);
 

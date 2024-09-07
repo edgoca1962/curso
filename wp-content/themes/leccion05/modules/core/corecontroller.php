@@ -42,6 +42,7 @@ class CoreController
       }
 
       $datos['post_type'] = $postType;
+
       $datos['bg-html'] = 'bg-dark';
       $datos['body-style'] = '';
       $datos['body'] = 'bg-dark bg-gradient text-white';
@@ -63,7 +64,6 @@ class CoreController
       $datos['templatepartnone'] = 'modules/core/view/core-templatepartnone';
       $datos['div8'] = 'col-12 col-xl-3';
       $datos['sidebarrighttemplate'] = 'modules/core/view/core-sidebarright';
-      $datos['commentsTemplate'] = '/modules/core/view/core-comments.php';
       $datos['footerclass'] = 'container pt-5';
       $datos['footertemplate'] = 'modules/core/view/core-footer';
 

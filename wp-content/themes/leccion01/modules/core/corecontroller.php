@@ -32,7 +32,6 @@ class CoreController
 
       $datos['post_type'] = get_post_Type();
       $datos['post_id'] = get_the_ID();
-      $datos['body'] = 'bg-dark bg-gradient text-white';
 
       $this->atributos = $datos;
 

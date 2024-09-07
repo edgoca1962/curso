@@ -26,7 +26,7 @@ $atributos = CoreController::get_instance()->get_datos();
    <?php wp_head(); ?>
 </head>
 
-<body <?php body_class($core->get_atributo('body')) ?> style="height: 100dvh;">
+<body <?php body_class($core->get_atributo('body')) ?> style="<?php echo $core->get_atributo('height') ?>">
    <h3>Página principal</h3>
    <?php wp_footer() ?>
 </body>
