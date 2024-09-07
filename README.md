@@ -187,19 +187,31 @@ Implementación de webpack, modificar themesetup e incluir fghegc.scss
 
 ### Leccion-04
 
-Implementación del index.php dinámico modificando la clase core.php. Creación del View con plantillas en blanco sin agregarpost, comentarios y navegación.
+Implementación del index.php dinámico modificando la clase core.php. Creación del View con plantillas en blanco sin agregarpost, comentarios y navegación y configuración de bootstrap en sccs
 
 ### Leccion-05
 
+Se incluye lógica para traer atributos de los diferentes módulos que se creasrán.
+
 ### Leccion-06
+
+Se incluyen imágenes para configurar el tema principal y se crea el primer módulo para manejar el Blog
 
 ### Leccion-07
 
+Manejo indivualizado de parametros para los posts como bg, imagen, etc.
+
 ### Leccion-08
+
+Implementación de los template con todos los parámetros. Implementación de css y js para core. El js implementa el cambio de ojo en los campos tipo password en el core
 
 ### Leccion-09
 
+Implementación de la lógica de login y cambio de clave como core. En el js se implementa el envío de formularios para el core.
+
 ### Leccion-10
+
+Implementación de js para el mdulo post con el boton para compartir en whatsapp y el envío de formularios del módulo separado del core.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

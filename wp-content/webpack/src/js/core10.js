@@ -114,8 +114,6 @@ if (document.getElementById('impbuscar')) {
    }
 }
 
-
-
 async function procesar_formularios_core(dataform, event) {
    event.preventDefault()
    event.stopPropagation()
