@@ -24,7 +24,8 @@ class PostController
 
    public function get_atributos($postType = 'post')
    {
-      $this->atributos['titulo'] = 'Blog';
+      $this->atributos['titulo'] = $this->get_datos($postType)['titulo'];
+      $this->atributos['subtitulo'] = $this->get_datos($postType)['subtitulo'];
       $this->atributos['div1'] = 'container-fluid';
       $this->atributos['div5'] = 'mt-5 mb-3';
       $this->atributos['div7'] = $this->get_datos($postType)['div7'];
@@ -36,6 +37,9 @@ class PostController
    }
    private function get_datos($postType)
    {
+      $datos['titulo'] = 'Blog';
+      $datos['subtitulo'] = '';
+      $datos['div7'] = '';
       if (is_single()) {
          $datos['templatepart'] = 'modules/' . $postType . '/view/' . $postType . '-single';
          $datos['subtitulo'] = get_the_title();

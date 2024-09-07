@@ -29,11 +29,6 @@ class PostController
    }
    public function get_atributos($postType = 'post')
    {
-      $this->atributos['bg-html'] = 'bg-white';
-      $this->atributos['body-style'] = '';
-      $this->atributos['body'] = 'bg-white text-black';
-
-      $this->atributos['imagen'] = $this->get_datos($postType)['imagen'];
       $this->atributos['titulo'] = $this->get_datos($postType)['titulo'];
       $this->atributos['subtitulo'] = $this->get_datos($postType)['subtitulo'];
       $this->atributos['div1'] = 'container-fluid';
@@ -42,6 +37,12 @@ class PostController
       $this->atributos['templatepart'] = $this->get_datos($postType)['templatepart'];
       $this->atributos['templatepartnone'] = 'modules/' . $postType . '/view/' . $postType . '-none';
       $this->atributos['parametros'] = $this->get_datos($postType)['parametros'];
+
+      $this->atributos['bg-html'] = 'bg-white';
+      $this->atributos['body-style'] = '';
+      $this->atributos['body'] = 'bg-white text-black';
+      $this->atributos['imagen'] = $this->get_datos($postType)['imagen'];
+
       $this->atributos['agregarpost'] = ''; //'modules/' . $postType . '/view/' . $postType . '-agregar';
       $this->atributos['sidebarrighttemplate'] = 'modules/post/view/post-sidebarright';
 

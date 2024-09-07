@@ -24,12 +24,7 @@ class PostController
 
    public function get_atributos($postType = 'post')
    {
-      $this->atributos['bg-html'] = 'bg-white';
-      $this->atributos['body-style'] = '';
-      $this->atributos['body'] = 'bg-white text-black';
-
-      $this->atributos['imagen'] = $this->get_datos($postType)['imagen'];
-      $this->atributos['titulo'] = 'Blog';
+      $this->atributos['titulo'] = $this->get_datos($postType)['titulo'];
       $this->atributos['subtitulo'] = $this->get_datos($postType)['subtitulo'];
       $this->atributos['div1'] = 'container-fluid';
       $this->atributos['div5'] = 'mt-5 mb-3';
@@ -38,11 +33,18 @@ class PostController
       $this->atributos['templatepartnone'] = 'modules/' . $postType . '/view/' . $postType . '-none';
       $this->atributos['parametros'] = $this->get_datos($postType)['parametros'];
 
+      $this->atributos['bg-html'] = 'bg-white';
+      $this->atributos['body-style'] = '';
+      $this->atributos['body'] = 'bg-white text-black';
+      $this->atributos['imagen'] = $this->get_datos($postType)['imagen'];
+
       return $this->atributos;
    }
    private function get_datos($postType)
    {
+      $datos['titulo'] = 'Blog';
       $datos['subtitulo'] = '';
+      $datos['div7'] = '';
       if (is_single()) {
          $datos['templatepart'] = 'modules/' . $postType . '/view/' . $postType . '-single';
          $datos['subtitulo'] = get_the_title();
