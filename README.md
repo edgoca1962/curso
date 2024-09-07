@@ -19,13 +19,6 @@
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
 
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
-
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
@@ -88,15 +81,6 @@ Incluir en esta parte una descripción del curso
 ### Built With
 
 This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
-
-- [![Next][Next.js]][Next-url]
-- [![React][React.js]][React-url]
-- [![Vue][Vue.js]][Vue-url]
-- [![Angular][Angular.io]][Angular-url]
-- [![Svelte][Svelte.dev]][Svelte-url]
-- [![Laravel][Laravel.com]][Laravel-url]
-- [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-- [![JQuery][JQuery.com]][JQuery-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -187,7 +171,7 @@ wp_enqueue_script('FontAwesome', "https://use.fontawesome.com/releases/v5.15.4/j
 </div>
 ```
 
-Console
+#### Console
 
 ```sh
 Swal.fire({
@@ -199,7 +183,11 @@ icon: "success"
 
 ### Leccion-03
 
+Implementación de webpack, modificar themesetup e incluir fghegc.scss
+
 ### Leccion-04
+
+Implementación del index.php dinámico modificando la clase core.php. Creación del View con plantillas en blanco sin agregarpost, comentarios y navegación.
 
 ### Leccion-05
 
