@@ -57,9 +57,9 @@
     <li><a href="#usage">Uso</a></li>
     <li><a href="#roadmap">Lecciones del Curso</a></li>
       <ul>
-        <li><a href="#leccion01">Lección  1</a></li>
-        <li><a href="#leccion02">Lección  2</a></li>
-        <li><a href="#leccion03">Lección  3</a></li>
+        <li><a href="#leccion 1">Lección  1</a></li>
+        <li><a href="#leccion 2">Lección  2</a></li>
+        <li><a href="#leccion 3">Lección  3</a></li>
         <li><a href="#leccion04">Lección  4</a></li>
         <li><a href="#leccion05">Lección  5</a></li>
         <li><a href="#leccion06">Lección  6</a></li>
