@@ -187,11 +187,15 @@ wp_enqueue_script('FontAwesome', "https://use.fontawesome.com/releases/v5.15.4/j
 </div>
 ```
 
+Console
+
+```sh
 Swal.fire({
 title: "Good job!",
 text: "You clicked the button!",
 icon: "success"
 });
+```
 
 ### Leccion-03
 
