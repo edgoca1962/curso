@@ -4,6 +4,7 @@
 
 !wp-content
 wp-content/*
+!README.md
 
 !wp-content/themes
 wp-content/themes/*
