@@ -113,10 +113,31 @@ if (document.getElementById('impbuscar')) {
       resultados.classList.add('invisible')
    }
 }
+if (document.getElementById('csvfilefrm')) {
+   const form = document.getElementById('csvfilefrm')
+   document.getElementById('csvfile').addEventListener('change', function () {
+      const csvfile = document.getElementById('csvfile').value
+      const csvfile2 = csvfile.split('\\')
+      document.getElementById('lbl_csvfile').innerHTML = csvfile2[2]
+   })
+
+   document.getElementById('csvfilefrm').addEventListener('submit', (event) => {
+      event.preventDefault()
+      const dataform = new FormData(form)
+      Swal.fire({
+         title: 'Procesando Archivo CSV',
+         html: `<i class="fs-1 text-secondary fa-solid fa-spinner fa-spin-pulse"></i>`,
+         showConfirmButton: false
+      })
+      //   procesar_formularios_core(dataform, event)
+   })
+}
+
 
 async function procesar_formularios_core(dataform, event) {
    event.preventDefault()
    event.stopPropagation()
+
    /*
    for (var pair of dataform.entries()) {
       var nombre = pair[0];

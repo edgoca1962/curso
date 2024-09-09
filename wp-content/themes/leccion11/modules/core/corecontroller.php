@@ -31,6 +31,7 @@ class CoreController
       add_action('wp_ajax_nopriv_ingresar', [$this, 'MYDOMAIN_ingresar']);
       add_action('wp_ajax_ingresar', [$this, 'MYDOMAIN_ingresar']);
       add_action('wp_ajax_cambiar_clave', [$this, 'MYDOMAIN_cambiar_clave']);
+      add_action('wp_ajax_csvfile', [$this, 'MYDOMAIN_csvfile']);
    }
    public function set_atributo($parametro, $valor)
    {
@@ -239,6 +240,11 @@ class CoreController
             'slug' => 'core-login',
             'titulo' => 'Login'
          ],
+         'csvfile' =>
+         [
+            'slug' => 'core-cpt-import',
+            'titulo' => 'Importar Datos'
+         ],
       ];
       foreach ($paginas as $pagina) {
          $pags = get_posts([
@@ -301,6 +307,49 @@ class CoreController
          } else {
             wp_send_json_error(['titulo' => 'Error', 'msg' => 'Error en la información.']);
          }
+      }
+   }
+   public function MYDOMAIN_csvfile()
+   {
+      if (!wp_verify_nonce($_POST['nonce'], 'csvfile')) {
+         wp_send_json_error('Error de seguridad', 401);
+      } else {
+         $campos = [];
+         $registro = 0;
+         $post_fields = [];
+         $post_meta = [];
+         $args = [];
+
+         if (($file = fopen($_FILES['csvfile']['tmp_name'], "r")) !== FALSE) {
+            $campos = fgetcsv($file);
+            $contador = 1;
+            while (($data = fgetcsv($file)) !== false) {
+               $registro = count($campos);
+               $primerRegistro = true;
+               for ($i = 0; $i < $registro; $i++) {
+                  if ($primerRegistro && ctype_digit($data[$i])) {
+                     $post_fields['import_id'] = $data[$i];
+                  } elseif (substr(trim($campos[$i]), 0, 4) === 'post') {
+                     $post_fields[$campos[$i]] = $data[$i];
+                  } else {
+                     $post_meta[$campos[$i]] = $data[$i];
+                  }
+                  $primerRegistro = false;
+               }
+               if (count($post_meta)) {
+                  $args = array_merge($post_fields, array('meta_input' => $post_meta));
+               } else {
+                  $args = $post_fields;
+               }
+               wp_insert_post($args);
+               $contador++;
+            }
+            wp_send_json_success(['titulo' => 'Procesado', 'msg' => "El archivo fue procesado exitosamente. ($contador)", 'args' => $args]);
+         } else {
+            wp_send_json_error(['titulo' => 'Error', 'msg' => 'Archivo no encontrado.']);
+         }
+         fclose($file);
+         die();
       }
    }
 }
