@@ -211,7 +211,11 @@ Implementación de la lógica de login y cambio de clave como core. En el js se 
 
 ### Leccion-10
 
-Implementación de js para el mdulo post con el boton para compartir en whatsapp y el envío de formularios del módulo separado del core.
+Implementación de js para el mdulo post para el comportamiento de los botones de mantenimiento y para compartir en whatsapp y el envío de formularios del módulo separado del core.
+
+### Leccion-11
+
+Implementación de la captura masiva de de custom posts.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
