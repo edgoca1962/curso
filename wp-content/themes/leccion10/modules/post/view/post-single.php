@@ -15,7 +15,7 @@ $atributos = $core->get_datos();
 $core->set_atributo('commentsTemplate', '')
 ?>
 
-<div class="col">
+<div id=<?php the_ID() ?> class="col">
    <h2 class="card-title"><?php the_title() ?></h2>
    <?php the_content() ?>
    <small class="text">
