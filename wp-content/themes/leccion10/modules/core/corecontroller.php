@@ -19,9 +19,6 @@ class CoreController
    private function __construct()
    {
       require_once MYDOMAIN_DIR_PATH . "/modules/core/walker.php";
-      require_once MYDOMAIN_DIR_PATH . '/modules/core/post_nav/class-twenty-twenty-one-svg-icons.php';
-      require_once MYDOMAIN_DIR_PATH . '/modules/core/post_nav/template-functions.php';
-      require_once MYDOMAIN_DIR_PATH . '/modules/core/post_nav/template-tags.php';
       require_once MYDOMAIN_DIR_PATH . "/modules/core/view/core-comments-cbk.php";
 
       $this->atributos = [];

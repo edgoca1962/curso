@@ -66,3 +66,25 @@ select:-webkit-autofill:focus {
       color: rgba(var(--bs-warning-rgb), 0.65);
          transform: scale(0.85) translateY(-0.5rem) translateX(0.15rem);
 }
+/*****************************************
+*
+* Formato para paginación
+*
+*****************************************/
+.pagination {
+   width: 100%;
+}
+
+.pagination .nav-links a,
+.pagination .nav-links .current {
+   background-color: rgba(var(--bs-warning-rgb), 1);
+   /*#fdb813; */
+   padding: 3px 5px;
+   color: white;
+   border-radius: 4px;
+   font-weight: bold;
+}
+
+.pagination .nav-links .current {
+   background-color: rgb(var(--bs-info-rgb));
+}

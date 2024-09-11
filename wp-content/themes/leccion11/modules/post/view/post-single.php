@@ -12,7 +12,7 @@ use MYDOMAIN\Modules\Core\CoreController;
 
 $core = CoreController::get_instance();
 $atributos = $core->get_datos();
-$core->set_atributo('commentsTemplate', '')
+// $core->set_atributo('commentsTemplate', '')
 ?>
 
 <div id=<?php the_ID() ?> class="col">
