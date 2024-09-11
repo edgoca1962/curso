@@ -11819,8 +11819,8 @@ select:-webkit-autofill:focus {
 
 .pagination .nav-links a,
 .pagination .nav-links .current {
-  background-color: rgba(var(--bs-warning-rgb), 1); /*#fdb813; */
-  padding: 3px 5px;
+  background-color: rgba(var(--bs-warning-rgb), 1);
+  padding: 5px 10px;
   color: white;
   border-radius: 4px;
   font-weight: bold;

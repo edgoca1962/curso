@@ -58,7 +58,7 @@ $atributos = CoreController::get_instance()->get_datos();
                               endwhile;
                               ?>
                            </div>
-                           <?php ($core->get_atributo('navegacion')) ? twenty_twenty_one_the_posts_navigation() : '' ?>
+                           <?php ($core->get_atributo('navegacion')) ? the_posts_pagination(['prev_text' => '&laquo; Anterior', 'mid_size' => 0, 'next_text' => 'Siguiente &raquo;',]) : '' ?>
                            <?php get_template_part($core->get_atributo('btn_regresar')) ?>
                         </div>
                      <?php else : ?>
