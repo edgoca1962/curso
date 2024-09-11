@@ -185,13 +185,16 @@ icon: "success"
 
 Implementación de webpack, modificar themesetup e incluir fghegc.scss
 
+<a href="wp-content/webpack/package.json">
+<a href="wp-content/webpack/webpack.config.cjs">
+
 ### Leccion-04
 
-Implementación del index.php dinámico modificando la clase core.php. Creación del View con plantillas en blanco sin agregarpost, comentarios y navegación y configuración de bootstrap en sccs
+Implementación del index.php dinámico modificando la clase core.php. Creación del View con plantillas en blanco sin agregarpost, comentarios y navegación con imagen de usuario y configuración de bootstrap en sccs
 
 ### Leccion-05
 
-Se incluye lógica para traer atributos de los diferentes módulos que se creasrán.
+Se incluye lógica para traer atributos de los diferentes módulos que se crearán.
 
 ### Leccion-06
 
