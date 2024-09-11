@@ -185,8 +185,8 @@ icon: "success"
 
 Implementación de webpack, modificar themesetup e incluir fghegc.scss
 
-<a href="wp-content/webpack/package.json">Archivo para instalar</a>
-<a href="wp-content/webpack/webpack.config.cjs">Configurar Webpack</a>
+<p><a href="wp-content/webpack/package.json">Archivo package.json</a></p>
+<p><a href="wp-content/webpack/webpack.config.cjs">Configurar Webpack</a></p>
 
 ### Leccion-04
 
