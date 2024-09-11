@@ -57,7 +57,7 @@ $atributos = CoreController::get_instance()->get_datos();
                            endwhile;
                            ?>
                         </div>
-                        <?php ($core->get_atributo('navegacion')) ? the_posts_pagination(['prev_text' => 'Pag anterior', 'next_text' => 'Pag siguiente']) : '' ?>
+                        <!-- Incluir navegación -->
                         <?php get_template_part('') ?>
                      </div>
                   <?php else : ?>
