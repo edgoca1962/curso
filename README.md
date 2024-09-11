@@ -103,7 +103,7 @@ Incluir los prerequisitos para la lección 1
 
 Instrucciones de instalación
 
-1. Get a free API Key at [https://example.com](https://example.com)
+1. Obtener la aplicación Local en [https://localwp.com/](https://localwp.com/)
 2. Clone the repo
    ```sh
    git clone https://github.com/github_username/repo_name.git
@@ -184,8 +184,22 @@ icon: "success"
 ### Leccion-03
 
 Implementación de webpack, modificar themesetup e incluir fghegc.scss
+En este implementación se hizo un folder dentro de wp-contents llamado webpack y que es en donde se ejecutará el siguiente comando en el terminal (MAC OS) la instalación de los paquetes que se utilizarán para la conformación de un solo archivo CSS y otro JS.
 
 <p><a href="wp-content/webpack/package.json">Archivo package.json</a></p>
+
+#### Terminal
+
+```sh
+sudo npm install
+```
+
+#### Folder webpack
+
+Crear el archivo webpack.config.cjs. En el siguiente enlace se puede ver el contenido del archivo.
+
+Hay tres lugares en donde se debe modificar este archivo, en la línea 7 que es en donde se indica el nombre del archivo fuente que en este parte del curso es source11.js. En la línea 12 que es en donde se indica el nombre del tema y el folder en donde se almacenarán los archivos CSS y JS y que en este caso es leccion11/assets/. Por último, se debe modificar la línea 34 que es donde se indica el servidor de la aplicación WP Local.
+
 <p><a href="wp-content/webpack/webpack.config.cjs">Configurar Webpack</a></p>
 
 ### Leccion-04
