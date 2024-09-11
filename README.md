@@ -104,25 +104,15 @@ Incluir los prerequisitos para la lección 1
 Instrucciones de instalación
 
 1. Obtener la aplicación Local en [https://localwp.com/](https://localwp.com/)
-2. Clone the repo
+2. En caso de no tener Node.js, obtenerla en [https://nodejs.org/en/download/package-manager](https://nodejs.org/en/download/package-manager)
+3. Verificar la versión de node en Terminal (MAC):
    ```sh
-   git clone https://github.com/github_username/repo_name.git
+   node -v
    ```
-3. Install NPM packages
+4. Verificar la versión de NPM en Terminal (MAC):
    ```sh
-   npm install
+   npm -v
    ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
-5. Change git remote url to avoid accidental pushes to base project
-   ```sh
-   git remote set-url origin github_username/repo_name
-   git remote -v # confirm the changes
-   ```
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- USAGE EXAMPLES -->
 
