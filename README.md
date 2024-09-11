@@ -72,8 +72,6 @@
 
 ## Acerca del Curso
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
 Incluir en esta parte una descripción del curso
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -93,11 +91,6 @@ Incluir la instrucciones para el inicio del curso
 ### Pre-requisitos
 
 Incluir los prerequisitos para la lección 1
-
-- npm
-  ```sh
-  npm install npm@latest -g
-  ```
 
 ### Instalación
 
@@ -173,15 +166,17 @@ icon: "success"
 
 ### Leccion-03
 
-Implementación de webpack, modificar themesetup e incluir fghegc.scss
-En este implementación se hizo un folder dentro de wp-contents llamado webpack y que es en donde se ejecutará el siguiente comando en el terminal (MAC OS) la instalación de los paquetes que se utilizarán para la conformación de un solo archivo CSS y otro JS.
+(Implementación de webpack, modificar themesetup e incluir fghegc.scss)
+En este implementación se hizo un folder dentro de wp-contents llamado webpack y que es en donde se ejecutará el siguiente comando en Terminal (MAC) la instalación de los paquetes que se utilizarán para la conformación de un solo archivo main.css y main.js.
 
 <p><a href="wp-content/webpack/package.json">Archivo package.json</a></p>
 
 #### Terminal
 
+Instalar las últimas versiones de los módulos incluidos en el archivo package.json:
+
 ```sh
-sudo npm install
+sudo npm install -g npm@latest
 ```
 
 #### Folder webpack
