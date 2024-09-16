@@ -10,6 +10,8 @@ namespace MYDOMAIN\Modules\Core;
  * 
  */
 
+use MYDOMAIN\Modules\Dpcr\DpcrModel;
+use MYDOMAIN\Modules\Dpcr\DpcrController;
 use MYDOMAIN\Modules\Post\PostController;
 
 class CoreController
@@ -21,9 +23,13 @@ class CoreController
       require_once MYDOMAIN_DIR_PATH . "/modules/core/walker.php";
       require_once MYDOMAIN_DIR_PATH . "/modules/core/view/core-comments-cbk.php";
 
-      $this->atributos = [];
+      $this->atributos = $this->get_datos();
       ThemeSetup::get_instance();
       PostController::get_instance();
+      GeneraCPT::get_instance();
+      DpcrController::get_instance();
+      DpcrModel::get_instance();
+
       $this->set_paginas();
       add_action('wp_ajax_nopriv_ingresar', [$this, 'MYDOMAIN_ingresar']);
       add_action('wp_ajax_ingresar', [$this, 'MYDOMAIN_ingresar']);
@@ -134,13 +140,25 @@ class CoreController
             $datos = PostController::get_instance()->get_atributos();
             break;
 
+         case 'dpcr':
+            $datos = DpcrController::get_instance()->get_atributos();
+            break;
+
          default:
             if (isset($_GET['cpt']) || in_array($postType, [])) {
                $titulo = 'No hay un información registrada';
             } else {
                $titulo = 'Página no existe';
+               $datos['div1'] = '';
+               $datos['div2'] = '';
+               $datos['div3'] = '';
+               $datos['div4'] = '';
+               $datos['div5'] = '';
+               $datos['div6'] = '';
+               $datos['div7'] = '';
+               $datos['div8'] = '';
             }
-            $datos['navbar'] = 'modules/core/view/navbar';
+            $datos['navbar'] = 'modules/core/view/core-navbar';
             $datos['height'] = '100dvh';
             $datos['titulo'] = $titulo;
             $datos['sidebarlefttemplate'] = '';

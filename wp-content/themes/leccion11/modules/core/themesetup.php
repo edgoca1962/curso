@@ -49,5 +49,6 @@ class ThemeSetup
    {
       wp_enqueue_style('styles', MYDOMAIN_DIR_STYLE, array(), microtime(), 'all');
       wp_enqueue_script('scripts', MYDOMAIN_DIR_URI . '/assets/main.js', array('jquery'), null, true);
+      wp_enqueue_script('GoogleMaps', 'https://maps.googleapis.com/maps/api/js?key=AIzaSyA31KJuZkm9rzF8_4zW4y9TneM5BI00lME&libraries=places&callback=initMap', array(), null, true);
    }
 }

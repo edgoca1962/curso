@@ -26,7 +26,7 @@ if (!defined('MYDOMAIN_MODULOS')) {
    define('MYDOMAIN_MODULOS', []);
 }
 if (!defined('MYDOMAIN_CPT_MODULO')) {
-   define('MYDOMAIN_CPT_MODULO', ['post' => 'post']);
+   define('MYDOMAIN_CPT_MODULO', ['post' => 'post', 'dpcr' => 'dpcr']);
 }
 
 require_once MYDOMAIN_DIR_PATH . '/modules/core/autoloader.php';

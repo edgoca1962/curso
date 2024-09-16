@@ -1,5 +1,9 @@
 import Swal from "sweetalert2"
 
+function initMap() {
+
+}
+
 console.log('WP Framework theme')
 
 if (document.getElementById('anuncio_foto')) {
@@ -129,7 +133,7 @@ if (document.getElementById('csvfilefrm')) {
          html: `<i class="fs-1 text-secondary fa-solid fa-spinner fa-spin-pulse"></i>`,
          showConfirmButton: false
       })
-      //   procesar_formularios_core(dataform, event)
+      procesar_formularios_core(dataform, event)
    })
 }
 

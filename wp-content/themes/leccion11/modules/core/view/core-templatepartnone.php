@@ -9,5 +9,6 @@
  */
 
 ?>
-
-<h3>No hay registros</h3>
+<?php if (get_post_type() == 'post') : ?>
+   <h3>No hay registros</h3>
+<?php endif; ?>

@@ -52,7 +52,7 @@ $atributos = CoreController::get_instance()->get_datos();
                                  if (is_page()) {
                                     the_content();
                                  }
-                                 if ((comments_open() || get_comments_number())) {
+                                 if ($core->get_atributo('comentarios') && (comments_open() || get_comments_number())) {
                                     comments_template($core->get_atributo('commentsTemplate'));
                                  }
                               endwhile;

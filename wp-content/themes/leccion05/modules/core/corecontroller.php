@@ -87,8 +87,16 @@ class CoreController
                $titulo = 'No hay un información registrada';
             } else {
                $titulo = 'Página no existe';
+               $datos['div1'] = '';
+               $datos['div2'] = '';
+               $datos['div3'] = '';
+               $datos['div4'] = '';
+               $datos['div5'] = '';
+               $datos['div6'] = '';
+               $datos['div7'] = '';
+               $datos['div8'] = '';
             }
-            $datos['navbar'] = 'modules/core/view/navbar';
+            $datos['navbar'] = 'modules/core/view/core-navbar';
             $datos['height'] = '100dvh';
             $datos['titulo'] = $titulo;
             $datos['sidebarlefttemplate'] = '';
