@@ -60,6 +60,8 @@
         <li><a href="#leccion-08">Lección 08</a></li>
         <li><a href="#leccion-09">Lección 09</a></li>
         <li><a href="#leccion-10">Lección 10</a></li>
+        <li><a href="#leccion-11">Lección 11</a></li>
+        <li><a href="#leccion-12">Lección 12</a></li>
       </ul>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
@@ -217,7 +219,20 @@ Implementación de js para el mdulo post para el comportamiento de los botones d
 
 ### Leccion-11
 
-Implementación de la captura masiva de de custom posts.
+Implementación de el generardor de Custom Posts Type y la captura masiva de de custom posts y el ejemplo es la división política de Costa Rica.
+Se incluye:
+
+1. imagen sjo.png
+2. generacpt.php
+3. Modulo dpcr con views controller y model. La plantilla dpcr-single.php contiene un script para incluir el mapa del barrio.
+   Se modifican:
+4. themesetup.php para incluir google maps
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+### Leccion-11
+
+Implementación del módulo de eventos.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
